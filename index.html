@@ -564,6 +564,60 @@
       color: var(--text-muted);
       line-height: 1.65;
     }
+
+    /* ── CTA ─────────────────────────────────────────── */
+    .cta {
+      border-top: 1px solid var(--border-soft);
+      background: var(--surface-2);
+    }
+
+    .cta-inner {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .cta-inner h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .cta-inner > p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-badges {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── FOOTER ──────────────────────────────────────── */
+    footer {
+      background: var(--primary-dark);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -757,6 +811,33 @@
       </div>
     </div>
   </section>
+
+  <section class="cta" id="get">
+    <div class="cta-inner">
+      <h2>Ready to cook in sync?</h2>
+      <p>Download KitchenSync and never pull anything out too early again.</p>
+      <div class="cta-badges">
+        <a class="store-badge" href="#">
+          <span class="badge-icon">&#9654;</span>
+          <span class="badge-text">
+            <small>Get it on</small>
+            Google Play
+          </span>
+        </a>
+        <a class="store-badge" href="#">
+          <span class="badge-icon">&#63743;</span>
+          <span class="badge-text">
+            <small>Download on the</small>
+            App Store
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>KitchenSync &mdash; built by <a href="https://mcfarlaneapps.co.uk">McFarlane Apps</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a></p>
+  </footer>
 
 </body>
 </html>
