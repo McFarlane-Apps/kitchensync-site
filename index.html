@@ -175,28 +175,21 @@
       align-items: center;
     }
 
-    .store-badge {
+    .badge-link {
       display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      background: var(--text);
-      color: #fff;
-      border-radius: 10px;
-      padding: 0.55rem 1.2rem;
-      text-decoration: none;
-      font-size: 0.82rem;
-      font-weight: 500;
-      transition: opacity 0.15s, transform 0.15s;
+      transition: transform 0.15s ease;
     }
 
-    .store-badge:hover { opacity: 0.85; transform: translateY(-1px); }
-    .store-badge .badge-icon { font-size: 1.1rem; line-height: 1; }
-    .store-badge .badge-text { line-height: 1.25; }
-    .store-badge .badge-text small {
+    .badge-link:hover { transform: translateY(-2px); }
+
+    .badge-link img {
+      height: 48px;
+      width: auto;
       display: block;
-      font-size: 0.65rem;
-      opacity: 0.7;
-      font-weight: 400;
+    }
+
+    @media (max-width: 480px) {
+      .badge-link img { height: 44px; }
     }
 
     /* ── HERO VISUAL: Timeline ───────────────────────── */
@@ -669,19 +662,11 @@
         <h1>Dinner, <em>synchronised.</em></h1>
         <p>Set the time you want to eat. KitchenSync works backwards and tells you exactly when each dish needs to go in — then alarms keep you on track while you cook.</p>
         <div class="store-badges">
-          <a class="store-badge" href="#">
-            <span class="badge-icon" aria-hidden="true">&#9654;</span>
-            <span class="badge-text">
-              <small>Get it on</small>
-              Google Play
-            </span>
+          <a class="badge-link" href="#" aria-label="Get it on Google Play">
+            <img src="badge_google_play.png" alt="Get it on Google Play">
           </a>
-          <a class="store-badge" href="#">
-            <span class="badge-icon" aria-hidden="true">&#63743;</span>
-            <span class="badge-text">
-              <small>Download on the</small>
-              App Store
-            </span>
+          <a class="badge-link" href="#" aria-label="Download on the App Store">
+            <img src="badge_app_store.svg" alt="Download on the App Store">
           </a>
         </div>
       </div>
@@ -843,19 +828,11 @@
       <h2>Ready to cook in sync?</h2>
       <p>Download KitchenSync and never pull anything out too early again.</p>
       <div class="cta-badges">
-        <a class="store-badge" href="#">
-          <span class="badge-icon" aria-hidden="true">&#9654;</span>
-          <span class="badge-text">
-            <small>Get it on</small>
-            Google Play
-          </span>
+        <a class="badge-link" href="#" aria-label="Get it on Google Play">
+          <img src="badge_google_play.png" alt="Get it on Google Play">
         </a>
-        <a class="store-badge" href="#">
-          <span class="badge-icon" aria-hidden="true">&#63743;</span>
-          <span class="badge-text">
-            <small>Download on the</small>
-            App Store
-          </span>
+        <a class="badge-link" href="#" aria-label="Download on the App Store">
+          <img src="badge_app_store.svg" alt="Download on the App Store">
         </a>
       </div>
     </div>
