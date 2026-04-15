@@ -618,6 +618,32 @@
     }
 
     footer a:hover { text-decoration: underline; }
+
+    /* ── RESPONSIVE ──────────────────────────────────── */
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding-top: 7rem;
+      }
+
+      .hero-visual { order: -1; }
+      .hero-text > p { max-width: 100%; }
+      .hero-text h1 { font-size: 2.75rem; }
+
+      .timeline-frame { max-width: 340px; }
+
+      .features-grid { grid-template-columns: 1fr; }
+      .why-grid      { grid-template-columns: 1fr; }
+
+      nav .links a { margin-left: 1rem; font-size: 0.85rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 { font-size: 2.1rem; }
+      .store-badges { flex-direction: column; align-items: flex-start; }
+      .cta-badges   { flex-direction: column; align-items: center; }
+    }
   </style>
 </head>
 <body>
