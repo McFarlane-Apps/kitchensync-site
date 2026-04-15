@@ -440,6 +440,76 @@
       font-size: 0.88rem;
       line-height: 1.65;
     }
+
+    /* ── HOW IT WORKS ────────────────────────────────── */
+    .how {
+      background: var(--primary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .how::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 44px 44px;
+      pointer-events: none;
+    }
+
+    .how-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+      position: relative;
+    }
+
+    .how .section-header h2 { color: #fff; }
+    .how .section-header p  { color: rgba(255,255,255,0.6); }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .step:last-child { border-bottom: none; }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.15rem;
+    }
+
+    .step-content h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.25rem;
+    }
+
+    .step-content p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.62);
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -567,6 +637,38 @@
         <div class="icon">&#128241;</div>
         <h3>Android &amp; iOS</h3>
         <p>A single, polished app on both platforms. Built with Flutter for native performance wherever you cook.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="how-inner">
+      <div class="section-header">
+        <h2>Three steps to a synchronised meal.</h2>
+        <p>Simpler than setting kitchen timers.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Build your meal</h3>
+            <p>Add each dish and how long it takes to cook. Save it to your library for next time.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Set your finish time</h3>
+            <p>Pick the time you want everything on the table. KitchenSync calculates the rest.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Cook to the schedule</h3>
+            <p>A live timeline shows what's next. Alarms fire at each start time so you never miss a beat.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
