@@ -389,6 +389,57 @@
       font-family: 'DM Sans', sans-serif;
       font-size: 0.82rem;
     }
+
+    /* ── FEATURES ────────────────────────────────────── */
+    .features {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--border-soft);
+      border-radius: 14px;
+      padding: 1.75rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .feature-card:hover {
+      border-color: var(--border);
+      box-shadow: 0 4px 22px rgba(184,92,42,0.1);
+    }
+
+    .feature-card .icon {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      background: var(--surface-2);
+      border: 1px solid var(--border-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      color: var(--text);
+    }
+
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.65;
+    }
   </style>
 </head>
 <body>
@@ -480,6 +531,45 @@
       </div>
     </section>
   </div>
+
+  <section class="features" id="features">
+    <div class="section-header">
+      <h2>Built around your oven, not a recipe.</h2>
+      <p>No ingredients, no method steps — just the dishes you're juggling and when they go in.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">&#8592;</div>
+        <h3>Backwards scheduling</h3>
+        <p>Tell KitchenSync when you want to eat. It subtracts every cook time and tells you the exact moment to start each dish.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">&#128276;</div>
+        <h3>Hands-free alarms</h3>
+        <p>A notification fires at each dish's start time. You stay focused on cooking — not on watching the clock.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">&#128203;</div>
+        <h3>Meal library</h3>
+        <p>Save your favourite meals and cook them again in two taps. Tweak components for a one-off session without altering the saved version.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">&#8597;</div>
+        <h3>Reorderable components</h3>
+        <p>Add, remove, and drag dishes into the order that makes sense to you. KitchenSync handles the timing regardless.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">&#127912;</div>
+        <h3>Material You</h3>
+        <p>Dynamic colour on Android, warm terracotta on iOS. Feels at home on both platforms.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">&#128241;</div>
+        <h3>Android &amp; iOS</h3>
+        <p>A single, polished app on both platforms. Built with Flutter for native performance wherever you cook.</p>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
