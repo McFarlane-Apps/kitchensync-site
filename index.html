@@ -105,6 +105,290 @@
       color: var(--text-muted);
       font-size: 0.95rem;
     }
+
+    /* ── HERO ────────────────────────────────────────── */
+    .hero-wrap {
+      background:
+        radial-gradient(ellipse 75% 55% at 70% 55%, rgba(184,92,42,0.07) 0%, transparent 70%);
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 8.5rem 2rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--surface);
+      border: 1px solid var(--border-soft);
+      border-radius: 999px;
+      padding: 0.3rem 0.9rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      margin-bottom: 1.5rem;
+    }
+
+    .eyebrow-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .hero-text h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 3.8rem;
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-text h1 em {
+      font-style: italic;
+      color: var(--primary);
+    }
+
+    .hero-text > p {
+      font-size: 1.08rem;
+      color: var(--text-2);
+      max-width: 440px;
+      margin-bottom: 2.25rem;
+      line-height: 1.75;
+    }
+
+    .store-badges {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: var(--text);
+      color: #fff;
+      border-radius: 10px;
+      padding: 0.55rem 1.2rem;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      transition: opacity 0.15s, transform 0.15s;
+    }
+
+    .store-badge:hover { opacity: 0.85; transform: translateY(-1px); }
+    .store-badge .badge-icon { font-size: 1.1rem; line-height: 1; }
+    .store-badge .badge-text { line-height: 1.25; }
+    .store-badge .badge-text small {
+      display: block;
+      font-size: 0.65rem;
+      opacity: 0.7;
+      font-weight: 400;
+    }
+
+    /* ── HERO VISUAL: Timeline ───────────────────────── */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .timeline-frame {
+      background: var(--white);
+      border: 1px solid var(--border-soft);
+      border-radius: 20px;
+      padding: 28px 32px;
+      width: 100%;
+      max-width: 380px;
+      box-shadow:
+        0 0 0 1px rgba(184,92,42,0.08),
+        0 24px 64px rgba(90,40,10,0.14),
+        0 6px 20px rgba(90,40,10,0.08);
+    }
+
+    .tl-header {
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .tl-header-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .tl-header-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .tl-body {
+      position: relative;
+      padding-left: 28px;
+    }
+
+    .tl-spine {
+      position: absolute;
+      left: 7px; top: 6px; bottom: 6px;
+      width: 2px;
+      background: linear-gradient(
+        to bottom,
+        var(--border-soft) 0%,
+        var(--primary) 45%,
+        var(--border-soft) 100%
+      );
+      border-radius: 2px;
+    }
+
+    .tl-item {
+      position: relative;
+      margin-bottom: 14px;
+    }
+
+    .tl-item:last-child { margin-bottom: 0; }
+
+    .tl-dot {
+      position: absolute;
+      left: -24px;
+      top: 5px;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--border-soft);
+      border: 2px solid var(--bg);
+    }
+
+    .tl-row {
+      font-size: 0.78rem;
+      color: var(--text-2);
+      font-family: 'DM Mono', monospace, 'DM Sans', sans-serif;
+      letter-spacing: 0.01em;
+    }
+
+    .tl-item.past .tl-dot  { background: var(--border-soft); }
+    .tl-item.past .tl-row  { opacity: 0.22; }
+
+    /* Now line */
+    .tl-now {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 8px 0 12px;
+    }
+
+    .tl-now-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border-soft);
+    }
+
+    .tl-now-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* Next-up card */
+    .tl-item.next-up {
+      margin-bottom: 18px;
+    }
+
+    .tl-item.next-up .tl-dot {
+      left: -26px; top: 14px;
+      width: 14px; height: 14px;
+      background: var(--primary);
+      border: 3px solid var(--white);
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+
+    .next-up-card {
+      background: var(--white);
+      border: 1.5px solid var(--primary);
+      border-radius: 12px;
+      padding: 12px 14px;
+      box-shadow: 0 4px 18px rgba(184,92,42,0.14);
+    }
+
+    .next-up-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .next-up-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .next-up-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .next-up-meta b { color: var(--text); font-weight: 600; }
+
+    .progress-bar {
+      height: 4px;
+      background: var(--surface-2);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 38%;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    /* Future items */
+    .tl-item.future .tl-dot { background: var(--border); }
+    .tl-item.future .tl-row { opacity: 0.55; }
+
+    /* Meal ready */
+    .tl-item.ready {
+      margin-top: 14px;
+    }
+
+    .tl-item.ready .tl-dot {
+      width: 12px; height: 12px;
+      left: -25px; top: 4px;
+      background: var(--primary);
+      border: 2px solid var(--white);
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+
+    .tl-item.ready .tl-row {
+      font-weight: 600;
+      color: var(--primary);
+      opacity: 1;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+    }
   </style>
 </head>
 <body>
@@ -122,6 +406,80 @@
       </div>
     </div>
   </nav>
+
+  <div class="hero-wrap">
+    <section class="hero">
+      <div class="hero-text">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Android &amp; iOS</div>
+        <h1>Dinner, <em>synchronised.</em></h1>
+        <p>Set the time you want to eat. KitchenSync works backwards and tells you exactly when each dish needs to go in — then alarms keep you on track while you cook.</p>
+        <div class="store-badges">
+          <a class="store-badge" href="#">
+            <span class="badge-icon">&#9654;</span>
+            <span class="badge-text">
+              <small>Get it on</small>
+              Google Play
+            </span>
+          </a>
+          <a class="store-badge" href="#">
+            <span class="badge-icon">&#63743;</span>
+            <span class="badge-text">
+              <small>Download on the</small>
+              App Store
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="timeline-frame">
+          <div class="tl-header">
+            <div class="tl-header-name">Sunday Roast</div>
+            <div class="tl-header-sub">Ready at 16:00</div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-spine"></div>
+
+            <div class="tl-item past">
+              <div class="tl-dot"></div>
+              <div class="tl-row">14:20 &middot; Potatoes &middot; 40m</div>
+            </div>
+
+            <div class="tl-now">
+              <div class="tl-now-line"></div>
+              <div class="tl-now-label">Now</div>
+              <div class="tl-now-line"></div>
+            </div>
+
+            <div class="tl-item next-up">
+              <div class="tl-dot"></div>
+              <div class="next-up-card">
+                <div class="next-up-label">Next up &middot; 15:05</div>
+                <div class="next-up-name">Chicken</div>
+                <div class="next-up-meta">Start in <b>12:34</b> &middot; takes 55m</div>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+              </div>
+            </div>
+
+            <div class="tl-item future">
+              <div class="tl-dot"></div>
+              <div class="tl-row">15:45 &middot; Gravy &middot; 15m</div>
+            </div>
+
+            <div class="tl-item future">
+              <div class="tl-dot"></div>
+              <div class="tl-row">15:50 &middot; Yorkshires &middot; 10m</div>
+            </div>
+
+            <div class="tl-item ready">
+              <div class="tl-dot"></div>
+              <div class="tl-row">16:00 &middot; Meal Ready &#127829;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 </body>
 </html>
