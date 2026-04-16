@@ -199,188 +199,59 @@
       align-items: center;
     }
 
-    .timeline-frame {
-      background: var(--white);
-      border: 1px solid var(--border-soft);
-      border-radius: 20px;
-      padding: 28px 32px;
-      width: 100%;
-      max-width: 380px;
-      box-shadow:
-        0 0 0 1px rgba(184,92,42,0.08),
-        0 24px 64px rgba(90,40,10,0.14),
-        0 6px 20px rgba(90,40,10,0.08);
-    }
-
-    .tl-header {
-      margin-bottom: 20px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border-soft);
-    }
-
-    .tl-header-name {
-      font-family: 'Fraunces', serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 2px;
-    }
-
-    .tl-header-sub {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
-
-    .tl-body {
-      position: relative;
-      padding-left: 28px;
-    }
-
-    .tl-spine {
-      position: absolute;
-      left: 7px; top: 6px; bottom: 6px;
-      width: 2px;
-      background: linear-gradient(
-        to bottom,
-        var(--border-soft) 0%,
-        var(--primary) 45%,
-        var(--border-soft) 100%
-      );
-      border-radius: 2px;
-    }
-
-    .tl-item {
-      position: relative;
-      margin-bottom: 14px;
-    }
-
-    .tl-item:last-child { margin-bottom: 0; }
-
-    .tl-dot {
-      position: absolute;
-      left: -24px;
-      top: 5px;
-      width: 10px; height: 10px;
-      border-radius: 50%;
-      background: var(--border-soft);
-      border: 2px solid var(--bg);
-    }
-
-    .tl-row {
-      font-size: 0.78rem;
-      color: var(--text-2);
-      font-family: monospace;
-      letter-spacing: 0.01em;
-    }
-
-    .tl-item.past .tl-dot  { background: var(--border-soft); }
-    .tl-item.past .tl-row  { opacity: 0.22; }
-
-    /* Now line */
-    .tl-now {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin: 8px 0 12px;
-    }
-
-    .tl-now-line {
-      flex: 1;
-      height: 1px;
-      background: var(--border-soft);
-    }
-
-    .tl-now-label {
-      font-size: 0.65rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    /* Next-up card */
-    .tl-item.next-up {
-      margin-bottom: 18px;
-    }
-
-    .tl-item.next-up .tl-dot {
-      left: -26px; top: 14px;
-      width: 14px; height: 14px;
-      background: var(--primary);
-      border: 3px solid var(--white);
-      box-shadow: 0 0 0 2px var(--primary);
-    }
-
-    .next-up-card {
-      background: var(--white);
-      border: 1.5px solid var(--primary);
-      border-radius: 12px;
-      padding: 12px 14px;
-      box-shadow: 0 4px 18px rgba(184,92,42,0.14);
-    }
-
-    .next-up-label {
-      font-size: 0.68rem;
-      font-weight: 700;
-      color: var(--primary);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 3px;
-    }
-
-    .next-up-name {
-      font-family: 'Fraunces', serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 4px;
-    }
-
-    .next-up-meta {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin-bottom: 8px;
-    }
-
-    .next-up-meta b { color: var(--text); font-weight: 600; }
-
-    .progress-bar {
-      height: 4px;
-      background: var(--surface-2);
-      border-radius: 2px;
+    /* ── PHONE FRAMES ───────────────────────────────── */
+    .phone-frame {
+      border-radius: 38px;
       overflow: hidden;
+      box-shadow:
+        0 0 0 8px #2A1A08,
+        0 0 0 11px rgba(184,92,42,0.25),
+        0 28px 72px rgba(42,26,8,0.38);
     }
 
-    .progress-fill {
-      height: 100%;
-      width: 38%;
-      background: var(--primary);
-      border-radius: 2px;
+    .phone-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
-    /* Future items */
-    .tl-item.future .tl-dot { background: var(--border); }
-    .tl-item.future .tl-row { opacity: 0.55; }
+    .hero-phone { width: 210px; }
 
-    /* Meal ready */
-    .tl-item.ready {
-      margin-top: 14px;
+    /* ── SCREENSHOTS ─────────────────────────────────── */
+    .screenshots {
+      background: var(--surface);
+      border-top: 1px solid var(--border-soft);
+      border-bottom: 1px solid var(--border-soft);
+      padding: 5rem 2rem;
     }
 
-    .tl-item.ready .tl-dot {
-      width: 12px; height: 12px;
-      left: -25px; top: 4px;
-      background: var(--primary);
-      border: 2px solid var(--white);
-      box-shadow: 0 0 0 2px var(--primary);
+    .screenshots-inner {
+      max-width: 700px;
+      margin: 0 auto;
     }
 
-    .tl-item.ready .tl-row {
-      font-weight: 600;
-      color: var(--primary);
-      opacity: 1;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.82rem;
+    .screenshots-phones {
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .screenshot-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .screenshot-item .phone-frame { width: 200px; }
+    .screenshot-item.featured .phone-frame { width: 220px; }
+
+    .screenshot-caption {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-align: center;
     }
 
     /* ── FEATURES ────────────────────────────────────── */
@@ -624,7 +495,10 @@
       .hero-text > p { max-width: 100%; }
       .hero-text h1 { font-size: 2.75rem; }
 
-      .timeline-frame { max-width: 340px; }
+      .hero-phone { width: 180px; }
+      .screenshots-phones { gap: 1.5rem; }
+      .screenshot-item .phone-frame { width: 150px; }
+      .screenshot-item.featured .phone-frame { width: 165px; }
 
       .features-grid { grid-template-columns: 1fr; }
       .why-grid      { grid-template-columns: 1fr; }
@@ -672,49 +546,9 @@
       </div>
 
       <div class="hero-visual">
-        <div class="timeline-frame">
-          <div class="tl-header">
-            <div class="tl-header-name">Sunday Roast</div>
-            <div class="tl-header-sub">Ready at 16:00</div>
-          </div>
-          <div class="tl-body">
-            <div class="tl-spine" aria-hidden="true"></div>
-
-            <div class="tl-item past">
-              <div class="tl-dot" aria-hidden="true"></div>
-              <div class="tl-row">14:20 &middot; Potatoes &middot; 40m</div>
-            </div>
-
-            <div class="tl-now">
-              <div class="tl-now-line"></div>
-              <div class="tl-now-label">Now</div>
-              <div class="tl-now-line"></div>
-            </div>
-
-            <div class="tl-item next-up">
-              <div class="tl-dot" aria-hidden="true"></div>
-              <div class="next-up-card">
-                <div class="next-up-label">Next up &middot; 15:05</div>
-                <div class="next-up-name">Chicken</div>
-                <div class="next-up-meta">Start in <b>12:34</b> &middot; takes 55m</div>
-                <div class="progress-bar"><div class="progress-fill"></div></div>
-              </div>
-            </div>
-
-            <div class="tl-item future">
-              <div class="tl-dot" aria-hidden="true"></div>
-              <div class="tl-row">15:45 &middot; Gravy &middot; 15m</div>
-            </div>
-
-            <div class="tl-item future">
-              <div class="tl-dot" aria-hidden="true"></div>
-              <div class="tl-row">15:50 &middot; Yorkshires &middot; 10m</div>
-            </div>
-
-            <div class="tl-item ready">
-              <div class="tl-dot" aria-hidden="true"></div>
-              <div class="tl-row">16:00 &middot; Meal Ready &#127829;</div>
-            </div>
+        <div class="hero-phone">
+          <div class="phone-frame">
+            <img src="screenshot_02_cook_mode.png" alt="KitchenSync cook mode showing a live Roast Dinner timeline">
           </div>
         </div>
       </div>
@@ -756,6 +590,29 @@
         <div class="icon">&#128241;</div>
         <h3>Android &amp; iOS</h3>
         <p>A single, polished app on both platforms. Built with Flutter for native performance wherever you cook.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="screenshots">
+    <div class="screenshots-inner">
+      <div class="section-header">
+        <h2>See it in action.</h2>
+        <p>Warm, minimal, and focused on the cooking.</p>
+      </div>
+      <div class="screenshots-phones">
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <img src="screenshot_01_meals.png" alt="Meal library screen showing a saved Roast Dinner">
+          </div>
+          <p class="screenshot-caption">Your meal library</p>
+        </div>
+        <div class="screenshot-item featured">
+          <div class="phone-frame">
+            <img src="screenshot_02_cook_mode.png" alt="Cook mode showing a live timeline for a Roast Dinner">
+          </div>
+          <p class="screenshot-caption">Live cook timeline</p>
+        </div>
       </div>
     </div>
   </section>
