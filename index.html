@@ -3,8 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KitchenSync — set the time you want to eat and get a precise start schedule for every dish, with alarms to keep you on track.">
-  <title>KitchenSync — Dinner, synchronised.</title>
+  <meta name="description" content="Kitchen Sync — set the time you want to eat and get a precise start schedule for every dish, with alarms to keep you on track.">
+  <title>Kitchen Sync — Dinner, synchronised.</title>
+  <link rel="canonical" href="https://kitchensync.mcfarlaneapps.co.uk/">
+  <meta name="theme-color" content="#FAF0E6">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kitchen Sync">
+  <meta property="og:title" content="Kitchen Sync — Dinner, synchronised.">
+  <meta property="og:description" content="Set the time you want to eat and get a precise start schedule for every dish, with alarms to keep you on track.">
+  <meta property="og:url" content="https://kitchensync.mcfarlaneapps.co.uk/">
+  <meta property="og:image" content="https://kitchensync.mcfarlaneapps.co.uk/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kitchen Sync cook mode showing a live Roast Dinner timeline">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="icon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -196,6 +208,19 @@
       img[src="badge_google_play.png"] { height: 55px; }
     }
 
+    .coming-soon {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.8rem 1.15rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
     /* ── HERO VISUAL: Timeline ───────────────────────── */
     .hero-visual {
       display: flex;
@@ -230,15 +255,16 @@
     }
 
     .screenshots-inner {
-      max-width: 700px;
+      max-width: 1000px;
       margin: 0 auto;
     }
 
     .screenshots-phones {
-      display: flex;
-      gap: 3rem;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 2.5rem;
       justify-content: center;
-      align-items: flex-end;
+      align-items: end;
     }
 
     .screenshot-item {
@@ -248,8 +274,7 @@
       gap: 1.25rem;
     }
 
-    .screenshot-item .phone-frame { width: 200px; }
-    .screenshot-item.featured .phone-frame { width: 220px; }
+    .screenshot-item .phone-frame { width: 190px; }
 
     .screenshot-caption {
       font-size: 0.85rem;
@@ -500,9 +525,8 @@
       .hero-text h1 { font-size: 2.75rem; }
 
       .hero-phone { width: 180px; }
-      .screenshots-phones { gap: 1.5rem; }
-      .screenshot-item .phone-frame { width: 150px; }
-      .screenshot-item.featured .phone-frame { width: 165px; }
+      .screenshots-phones { grid-template-columns: repeat(2, auto); gap: 2rem 1.5rem; }
+      .screenshot-item .phone-frame { width: 140px; }
 
       .features-grid { grid-template-columns: 1fr; }
       .why-grid      { grid-template-columns: 1fr; }
@@ -523,7 +547,7 @@
     <div class="inner">
       <a href="index.html" class="logo">
         <div class="logo-icon"><img src="icon.svg" alt="" aria-hidden="true"></div>
-        KitchenSync
+        Kitchen Sync
       </a>
       <div class="links">
         <a href="#features">Features</a>
@@ -536,23 +560,26 @@
   <div class="hero-wrap">
     <section class="hero">
       <div class="hero-text">
-        <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Android &amp; iOS</div>
+        <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Coming soon &middot; Android &amp; iOS</div>
         <h1>Dinner, <em>synchronised.</em></h1>
-        <p>Set the time you want to eat. KitchenSync works backwards and tells you exactly when each dish needs to go in — then alarms keep you on track while you cook.</p>
+        <p>Set the time you want to eat. Kitchen Sync works backwards and tells you exactly when each dish needs to go in — then alarms keep you on track while you cook.</p>
+        <!-- Launch day: once both listings are live, swap the note below for these badges.
         <div class="store-badges">
-          <a class="badge-link" href="#" aria-label="Get it on Google Play">
+          <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.alitheg.kitchensync" aria-label="Get it on Google Play">
             <img src="badge_google_play.png" alt="Get it on Google Play">
           </a>
-          <a class="badge-link" href="#" aria-label="Download on the App Store">
+          <a class="badge-link" href="https://apps.apple.com/app/id6762381796" aria-label="Download on the App Store">
             <img src="badge_app_store.svg" alt="Download on the App Store">
           </a>
         </div>
+        -->
+        <div class="coming-soon"><span class="eyebrow-dot" aria-hidden="true"></span> Coming soon to the App Store and Google Play</div>
       </div>
 
       <div class="hero-visual">
         <div class="hero-phone">
           <div class="phone-frame">
-            <img src="screenshot_02_cook_mode.png" alt="KitchenSync cook mode showing a live Roast Dinner timeline">
+            <img src="screenshot_02_cook_mode.png" alt="Kitchen Sync cook mode showing a live Roast Dinner timeline">
           </div>
         </div>
       </div>
@@ -568,7 +595,7 @@
       <div class="feature-card">
         <div class="icon">&#8592;</div>
         <h3>Backwards scheduling</h3>
-        <p>Tell KitchenSync when you want to eat. It subtracts every cook time and tells you the exact moment to start each dish.</p>
+        <p>Tell Kitchen Sync when you want to eat. It subtracts every cook time and tells you the exact moment to start each dish.</p>
       </div>
       <div class="feature-card">
         <div class="icon">&#128276;</div>
@@ -581,14 +608,14 @@
         <p>Save your favourite meals and cook them again in two taps. Tweak components for a one-off session without altering the saved version.</p>
       </div>
       <div class="feature-card">
-        <div class="icon">&#8597;</div>
-        <h3>Reorderable components</h3>
-        <p>Add, remove, and drag dishes into the order that makes sense to you. KitchenSync handles the timing regardless.</p>
+        <div class="icon">&#9878;</div>
+        <h3>Simultaneous starts</h3>
+        <p>When two or three dishes need to go in at the same moment, Kitchen Sync groups them into one step so nothing gets missed.</p>
       </div>
       <div class="feature-card">
         <div class="icon">&#127912;</div>
-        <h3>Material You</h3>
-        <p>Dynamic colour on Android, warm terracotta on iOS. Feels at home on both platforms.</p>
+        <h3>Light, dark or system</h3>
+        <p>A warm terracotta palette in light and dark themes. Follow your device or pick the one you prefer.</p>
       </div>
       <div class="feature-card">
         <div class="icon">&#128241;</div>
@@ -607,15 +634,27 @@
       <div class="screenshots-phones">
         <div class="screenshot-item">
           <div class="phone-frame">
-            <img src="screenshot_01_meals.png" alt="Meal library screen showing a saved Roast Dinner">
+            <img src="screenshot_01_meals.png" alt="Meal library screen listing five saved meals" loading="lazy">
           </div>
           <p class="screenshot-caption">Your meal library</p>
         </div>
-        <div class="screenshot-item featured">
+        <div class="screenshot-item">
           <div class="phone-frame">
-            <img src="screenshot_02_cook_mode.png" alt="Cook mode showing a live timeline for a Roast Dinner">
+            <img src="screenshot_03_set_end_time.png" alt="Set end time screen for Steak Night, ready at 4:00 PM" loading="lazy">
+          </div>
+          <p class="screenshot-caption">Pick when you want to eat</p>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <img src="screenshot_02_cook_mode.png" alt="Cook mode showing a live timeline for a Roast Dinner" loading="lazy">
           </div>
           <p class="screenshot-caption">Live cook timeline</p>
+        </div>
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <img src="screenshot_04_settings.png" alt="Settings screen with theme, alarm sound and haptic feedback options" loading="lazy">
+          </div>
+          <p class="screenshot-caption">Themes and alerts</p>
         </div>
       </div>
     </div>
@@ -639,7 +678,7 @@
           <div class="step-num">2</div>
           <div class="step-content">
             <h3>Set your finish time</h3>
-            <p>Pick the time you want everything on the table. KitchenSync calculates the rest.</p>
+            <p>Pick the time you want everything on the table. Kitchen Sync calculates the rest.</p>
           </div>
         </div>
         <div class="step">
@@ -656,14 +695,14 @@
   <section class="why" id="why">
     <div class="why-inner">
       <div class="section-header">
-        <h2>Why KitchenSync?</h2>
+        <h2>Why Kitchen Sync?</h2>
         <p>For anyone who's ever pulled out the chicken too early.</p>
       </div>
       <div class="why-grid">
         <div class="why-item">
           <div class="why-num">01</div>
           <h3>No more mental arithmetic</h3>
-          <p>Stop working backwards in your head. If the chicken takes 1h20 and you want to eat at 7, KitchenSync just tells you: start at 17:40. Done.</p>
+          <p>Stop working backwards in your head. If the chicken takes 1h20 and you want to eat at 7, Kitchen Sync just tells you: start at 17:40. Done.</p>
         </div>
         <div class="why-item">
           <div class="why-num">02</div>
@@ -673,7 +712,7 @@
         <div class="why-item">
           <div class="why-num">03</div>
           <h3>Stays out of your way</h3>
-          <p>Start cooking and put your phone down. KitchenSync runs quietly in the background and taps your shoulder at exactly the right moment.</p>
+          <p>Start cooking and put your phone down. Kitchen Sync runs quietly in the background and taps your shoulder at exactly the right moment.</p>
         </div>
         <div class="why-item highlight">
           <div class="why-num">04</div>
@@ -687,20 +726,24 @@
   <section class="cta" id="get">
     <div class="cta-inner">
       <h2>Ready to cook in sync?</h2>
-      <p>Download KitchenSync and never pull anything out too early again.</p>
+      <!-- Launch day: once both listings are live, swap the two lines below for this copy and these badges.
+      <p>Download Kitchen Sync and never pull anything out too early again.</p>
       <div class="cta-badges">
-        <a class="badge-link" href="#" aria-label="Get it on Google Play">
+        <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.alitheg.kitchensync" aria-label="Get it on Google Play">
           <img src="badge_google_play.png" alt="Get it on Google Play">
         </a>
-        <a class="badge-link" href="#" aria-label="Download on the App Store">
+        <a class="badge-link" href="https://apps.apple.com/app/id6762381796" aria-label="Download on the App Store">
           <img src="badge_app_store.svg" alt="Download on the App Store">
         </a>
       </div>
+      -->
+      <p>Kitchen Sync is nearly here. Never pull anything out too early again.</p>
+      <div class="coming-soon"><span class="eyebrow-dot" aria-hidden="true"></span> Coming soon to the App Store and Google Play</div>
     </div>
   </section>
 
   <footer>
-    <p>KitchenSync &mdash; built by <a href="https://mcfarlaneapps.co.uk">McFarlane Apps</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a></p>
+    <p>Kitchen Sync &mdash; built by <a href="https://mcfarlaneapps.co.uk">McFarlane Apps</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a></p>
   </footer>
 
 </body>
